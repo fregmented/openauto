@@ -1,9 +1,6 @@
 
 # OpenAuto
 
-### Community
-[![Join the chat at https://gitter.im/publiclab/publiclab](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/openauto_androidauto/Lobby)
-
 ### Description
 OpenAuto is an AndroidAuto(tm) headunit emulator based on aasdk library and Qt libraries. Main goal is to run this application on the RaspberryPI 3 board computer smoothly.
 
@@ -21,11 +18,12 @@ sudo apt-get install libboost-all-dev libusb-1.0.0-dev libssl-dev cmake libproto
 
 git clone https://github.com/OpenDsh/openauto
 
-mkdir openauto_build; cd openauto_build
+cd openauto
 
-cmake -DCMAKE_BUILD_TYPE=Release -DRPI3_BUILD=TRUE -DAASDK_INCLUDE_DIRS="../aasdk/include" -DAASDK_LIBRARIES="../aasdk/lib/libaasdk.so" -DAASDK_PROTO_INCLUDE_DIRS="../aasdk" -DAASDK_PROTO_LIBRARIES="../aasdk/lib/libaasdk_proto.so" ../openauto
+cmake -DRPI_BUILD=TRUE -DGST_BUILD=TRUE .
 
-make -j2
+make
+
 sudo make install
 ```
 
