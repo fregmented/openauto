@@ -8,6 +8,11 @@ OpenAuto is an AndroidAuto(tm) headunit emulator based on aasdk library and Qt l
 
 ## Build Guide
 #### Local build instructions for Raspberry Pi
+#### Building all components of OpenDash should be in the following order:
+1. aasdk
+2. qt-gstreamer
+3. OpenAuto
+4. Dash
 
 Having <a href="https://github.com/openDsh/aasdk">aasdk</a> built and installed first, is a prequisite for this task. Please complete the necessary aasdk steps before proceeding here.
 
