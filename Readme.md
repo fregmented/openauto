@@ -9,7 +9,7 @@ OpenAuto is an AndroidAuto(tm) headunit emulator based on aasdk library and Qt l
 ### Build Guide
 #### Local build instructions for Raspberry Pi
 
-Having <a href="https://github.com/openDsh/aasdk">aasdk</a> built and install first is a prequisite for this task. Please complete the necessary aasdk steps before proceeding here.
+Having <a href="https://github.com/openDsh/aasdk">aasdk</a> built and installed first, is a prequisite for this task. Please complete the necessary aasdk steps before proceeding here.
 
 ```sudo apt-get update
 sudo apt-get -y install cmake build-essential git
